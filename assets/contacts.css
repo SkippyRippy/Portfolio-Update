@@ -1,0 +1,126 @@
+Body {
+    background-image: url(bananas/bananas.png)
+}
+header {
+    box-sizing: content-box;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightcyan;
+    max-width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: lightblue;
+  }
+  
+  .active {
+    background-color: teal;
+  }
+
+  .container {
+      background-color: lightpink;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      max-width: 85%;
+      height: auto;
+    float: left;   
+  }
+
+  h1 {
+    text-align: left;
+    padding: auto;
+    float: left;
+  }
+  .para1 {
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 2%;
+}
+
+.contacts {
+  padding: 2%;
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+@media screen & (max-width: 960px)
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen & (max-width: 960px)
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media screen & (max-width: 960px)
+and (device-width: 360px) 
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 4) {
+  .col {width: 100%;}
+}
+
+/* Portrait */
+@media screen & (max-width: 960px) 
+and (device-width: 360px) 
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 4) 
+and (orientation: portrait) {
+  .col {width: 100%;}
+}
+
+/* Landscape */
+@media screen & (max-width: 960px)
+and (device-width: 360px) 
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 4) 
+and (orientation: landscape) {
+  .col {width: 100%;}
+}
