@@ -1,73 +1,115 @@
-Body {
-    background-image: url(bananas/bananas.png)
+* {
+  margin: 0;
+  padding: 0;
 }
-header {
-    box-sizing: content-box;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: lightcyan;
-    max-width: 100%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: lightblue;
-  }
-  
-  .active {
-    background-color: teal;
-  }
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 
-  .container {
-      background-color: lightpink;
-      display: flex;
-      flex-wrap: wrap;
-      float: left;
-      align-content: center;
-      max-width: 85%;
-      height: auto;   
-  }
+.lead {
+  font-size: 1.5rem;
+}
 
-  h1 {
-    text-align: left;
-    padding: 2%;
-    float: left;
-  }
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  /* height: 60px; */
+  background: rgba(63, 191, 191, 0.65);
+}
 
-  .Jelly {
-      height: auto;
-      max-width: 25%;
-      margin: auto;
-      float: left;
-      padding: 2%;
-  }
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
 
-  .para1 {
-      padding: 2%;
-      width: auto;
-      height: auto;
-  }
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
 
-  .para2 {
-      padding: 2%;
-      width: auto;
-      height: auto;
-  }
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: rgb(199, 65, 199);
+}
+.me {
+  max-width: 15%;
+  max-height: auto;
+  display: flex;
+}
+.art1, .art2, .art3, .art4, .art5 {
+  max-width: 20%;
+  max-height: 20%;
+}
+.art6 {
+  max-width: 15%;
+  max-height: 15%;
+}
+.code1, .code2, .code3, .code4, .code5, .code6, .code7, .code8, .code9 {
+  max-width: 20%;
+  max-height: 20%;
+}
+.fab, .fa {
+  color: aqua;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+/* Section Images */
+section#home {
+  background: url(ArtWorks/otter.jpg) no-repeat center center/cover;;
+}
+
+section#about {
+  background: url(ArtWorks/eevees.jpg) no-repeat center center/cover;;
+}
+
+section#service {
+  background: url(ArtWorks/eye.jpg) no-repeat center center/cover;;
+}
+
+section#contact {
+  background: url(ArtWorks/me.jpg) no-repeat center center/cover;;
+}
+
   
 @media screen & (max-width: 960px)
   and (min-device-width: 1200px) 

@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link type="text/css"
-    rel="stylesheet"
-    href="assets/homePage.css">
+    <link rel="stylesheet" href="https://github.com/jgthms/bulma/blob/master/css/bulma.css">
+    <link type="text/css" rel="stylesheet" href="assets/homePage.css">
+    <script src="https://kit.fontawesome.com/580e1a2d9b.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="projects.html" class="portfolio">Portfolio</a></li>
-        <li><a href="contacts.html" class="contact">Contact</a></li>
-    </ul>
     <div class="container">
-        <div class="row1">
-            <div class="col-md-12">
-                <h1>Amanda Johnson</h1>
-            </div>
-        </div>
-        <div class="row2">
-            <div class="col-md">
-                <img class="Jelly" src="assets/ArtWorks/Jellybelly.png">
-            </div>
-            <div class="col-md"></div>
-                <p class="para1">I've spent a large portion of my life doing traditional art and learning all that I could about how things functioned the way that they do.
-                Once I was older I obtained a deeper understanding of art and its place in the world. I soon realized that I wasn't meant to me a fine arts artist.
-                I never wanted to invest all of my time into one medium. So I learned more and more subjects which eventually lead me to coding.
-                </p>          
-                <p class="para2">To the left is my cat Jellybean and this picture is a result of an unknown phenomenon.
-                Neither I nor my teacher understand how you can see through my cat's ears in this picture. It is beyond us.
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Art Works</a></li>
+                <li><a href="#service">Coding Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1>Amanda Johnson</h1>
+            <img class="me" src="assets/ArtWorks/seal.png">
+            <p class="lead">Hello to all the lovely people</p>
+            <p>I am an art graduate with a Bachelors of Science in Art and am currently earning my full stack certificate.</p>
+            <p>My hobbies include illustrating, playing the trombone and tuba, and Magic the Gathering.</p>
+        </section>
+        <section id="about">
+            <h1>Art Works</h1>
+            <div class="art">
+                <p>
+                    <img class="art1" src="assets/ArtWorks/desk.jpg">
+                    <img class="art2" src="assets/ArtWorks/fox.jpg">
+                    <img class="art3" src="assets/ArtWorks/jelly.jpg">
+                </p>
+                <p>
+                    <img class="art4" src="assets/ArtWorks/miki.jpg">
+                    <img class="art6" src="assets/ArtWorks/mermaid.jpg">
+                    <img class="art5" src="assets/ArtWorks/music.jpg">
                 </p>
             </div>
-        </div>
+            <p class="lead">These are but a few of the works I have done throughout my time in college.</p>
+        </section>
+        <section id="service">
+            <h1>Coding Projects</h1>
+            <p class="lead">Below is a sample of the projects I have had a part in.</p>
+            <p>
+                <a href=""><img class="code1" src="assets/Screenshots/giphy.png"></a>
+                <a href="https://skippyrippy.github.io/Homework-5/"><img class="code2" src="assets/Screenshots/smash.png"></a>
+                <a href=""><img class="code3" src="assets/Screenshots/giphy.png"></a>
+            </p>
+            <p>
+                <a href="https://fitzpa.github.io/LouieGroupProject/"><img class="code4" src="assets/Screenshots/groupProject1.png"></a>
+                <a href="https://sevenvseven.herokuapp.com/"><img class="code5" src="assets/Screenshots/groupProject1.png"></a>
+                <a href="https://github.com/SkippyRippy/friendFinder"><img class="code6" src="assets/Screenshots/survey1.png"></a>
+            </p>
+            <p>
+                <a href="https://github.com/SkippyRippy/Homework-12"><img class="code7" src="assets/Screenshots/burger.png"></a>
+                <a href="https://github.com/SkippyRippy/Homework-15"><img class="code8" src="assets/Screenshots/click.png"></a>
+                <a href="#">group project 3</a>
+            </p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>
+                <a href="#"><i class="fa fa-user-circle fa-5x"></i></a>
+                <a href="#"><i class="fab fa-github-alt fa-5x"></i></a>
+                <a href="#"><i class="fab fa-gitlab fa-5x"></i></a>
+                <a href="#"><i class="fab fa-twitch fa-5x"></i></a>
+            </p>
+        </section>
     </div>
 </body>
 
