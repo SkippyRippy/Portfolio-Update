@@ -60,19 +60,23 @@ body {
   max-height: auto;
   display: flex;
 }
-.art1, .art2, .art3, .art4, .art5 {
-  max-width: 20%;
-  max-height: 20%;
-}
-.art6 {
+.art1, .art2, .art3, .art4, .art5, .art10 {
   max-width: 15%;
   max-height: 15%;
+}
+.art6, .art7, .art9 {
+  max-width: 10%;
+  max-height: 10%;
+}
+.art8 {
+  max-width: 7%;
+  max-height: 7%;
 }
 .code1, .code2, .code3, .code4, .code5, .code6, .code7, .code8, .code9 {
   max-width: 20%;
   max-height: 20%;
 }
-.fab, .fa {
+.fab, .fa, .fas {
   color: aqua;
 }
 
